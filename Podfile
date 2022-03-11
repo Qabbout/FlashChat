@@ -3,6 +3,8 @@ platform :ios, 13.0
 target 'FlashChat' do
   use_frameworks!
 
+  pod 'IQKeyboardManagerSwift'
+
   # Pods for FlashChat
 
   pod 'Firebase/Auth'
