@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Firebase
 class ChatViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -18,6 +18,17 @@ class ChatViewController: UIViewController {
     }
 
     @IBAction func sendPressed(_ sender: UIButton) {
+    }
+
+    @IBAction func logOutPressed(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+
+
+        } catch let signOutError as NSError  {
+            
+            print(signOutError.localizedDescription)
+        }
     }
 
 }
