@@ -18,6 +18,7 @@
 		F7442F8327D52F9400E2F052 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7442F8227D52F9400E2F052 /* LoginViewController.swift */; };
 		F7442F8527D52FA900E2F052 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7442F8427D52FA900E2F052 /* ChatViewController.swift */; };
 		F74E364927D9241700C8026D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F74E364827D9241700C8026D /* GoogleService-Info.plist */; };
+		F7678A2227DBC55D009F5E5A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7678A2127DBC55D009F5E5A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F7442F8227D52F9400E2F052 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F7442F8427D52FA900E2F052 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		F74E364827D9241700C8026D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F7678A2127DBC55D009F5E5A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,6 @@
 				219DEEC37E6CA9EB4F8EFDB6 /* Pods-FlashChat.debug.xcconfig */,
 				D799745F7F4F1DBD89E0B917 /* Pods-FlashChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -99,6 +100,7 @@
 				F7442F7427D52EBE00E2F052 /* LaunchScreen.storyboard */,
 				F7442F7727D52EBE00E2F052 /* Info.plist */,
 				F74E364827D9241700C8026D /* GoogleService-Info.plist */,
+				F7678A2127DBC55D009F5E5A /* Constants.swift */,
 			);
 			path = FlashChat;
 			sourceTree = "<group>";
@@ -248,6 +250,7 @@
 				F7442F6A27D52EBD00E2F052 /* AppDelegate.swift in Sources */,
 				F7442F6C27D52EBD00E2F052 /* SceneDelegate.swift in Sources */,
 				F7442F8327D52F9400E2F052 /* LoginViewController.swift in Sources */,
+				F7678A2227DBC55D009F5E5A /* Constants.swift in Sources */,
 				F7442F8527D52FA900E2F052 /* ChatViewController.swift in Sources */,
 				F7442F8127D52F7900E2F052 /* RegisterViewController.swift in Sources */,
 			);
