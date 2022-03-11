@@ -12,6 +12,8 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
 
+    let db = Firestore.firestore()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = K.title
@@ -24,6 +26,15 @@ class ChatViewController: UIViewController {
     }
 
     @IBAction func sendPressed(_ sender: UIButton) {
+
+        if let messageBody = messageTextfield.text, let messageSender = Auth.auth().currentUser?.email {
+            db.collection(K.FStore.collectionName).addDocument(data: [K.FStore.senderField: messageSender, K.FStore.bodyField: messageBody]) { error in
+                if let error = error {
+                    print("Couldnt save data to Firestore \(error)")
+                }
+            }
+
+        }
     }
 
     @IBAction func logOutPressed(_ sender: Any) {
@@ -31,7 +42,7 @@ class ChatViewController: UIViewController {
             try Auth.auth().signOut()
             navigationController?.popToRootViewController(animated: true)
 
-        } catch let signOutError as NSError  {
+        } catch let signOutError as NSError {
 
             print(signOutError.localizedDescription)
         }
