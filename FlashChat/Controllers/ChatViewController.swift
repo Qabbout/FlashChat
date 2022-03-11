@@ -17,6 +17,8 @@ class ChatViewController: UIViewController {
         title = K.title
         navigationItem.hidesBackButton = true
 
+        tableView.dataSource = self
+
     }
 
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -32,5 +34,19 @@ class ChatViewController: UIViewController {
             print(signOutError.localizedDescription)
         }
     }
+
+}
+
+extension ChatViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
+
+        return cell
+
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        3
+    }
+
 
 }
