@@ -12,6 +12,7 @@ struct K {
     static let cellNibName = "MessageCell"
     static let registerSegue = "RegisterToChat"
     static let loginSegue = "LoginToChat"
+    static let title = "⚡️FlashChat"
 
     struct BrandColors {
         static let purple = "BrandPurple"
