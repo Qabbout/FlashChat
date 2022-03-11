@@ -1,4 +1,4 @@
-#  Clima
+#  FlashChat
 
 iOS simple chatting application, allows registering and logging in through Firebase, using UIKit Firebase and the MVC design pattern.
 
